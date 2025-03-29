@@ -33,39 +33,73 @@ function rps(userChoice) {
 	let computerChoice = options[randomNumber]
 	result.src = imgOptions[randomNumber]
 
-	setTimeout(() => {
-		result.src = "";
-		textResult.innerHTML = ""
-		
-	}, 1000) ;
+	// setTimeout(() => {
+	// 	result.src = "";
+	// 	textResult.innerHTML = ""
+	// }, 1000) ;
 
 	if(userchoice == computerChoice){
 		console.log("It's a tie!");
 		textResult.innerHTML = "It's a tie!"
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+
+		}, 1000) ;
 	}
 	else if(userchoice == 'rock' && computerChoice == 'paper'){
 		computer += 1;	
 		textResult.innerHTML = "Lose.."
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else if(userchoice == 'rock' && computerChoice == 'scissor'){
 		user += 1;
 		textResult.innerHTML = "Win!"
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else if(userchoice == 'paper' && computerChoice == 'rock'){
 		user += 1;
 		textResult.innerHTML = "Win!"
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else if(userchoice == 'paper' && computerChoice == 'scissor'){
 		computer += 1; 
 		textResult.innerHTML = "Lose.."
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else if(userchoice == 'scissor' && computerChoice == 'paper'){
 		user += 1; 
 		textResult.innerHTML = "Win!"
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else if(userchoice == 'scissor' && computerChoice == 'rock'){
 		computer += 1; 
 		textResult.innerHTML = "Lose.."
+		setTimeout(() => {
+			result.src = "";
+			textResult.innerHTML = ""
+			
+		}, 1000) ;
 	}
 	else {
 		console.log('none')
